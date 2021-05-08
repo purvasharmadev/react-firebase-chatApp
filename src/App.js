@@ -19,12 +19,10 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <h2>Chit-Chat</h2>
+        <SignOut />
       </header>
 
-      <section>
-        {user ? <Chatroom /> : <SignIn />}
-        <SignOut />
-      </section>
+      <section>{user ? <Chatroom /> : <SignIn />}</section>
     </div>
   );
 }
