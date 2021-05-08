@@ -40,6 +40,7 @@ function Chatroom() {
       </main>
       <form onSubmit={sendMessage}>
         <input
+          placeholder="say something nice ❤"
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
         />
